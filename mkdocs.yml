@@ -1,0 +1,85 @@
+site_name: MVU Zod 한국어 가이드
+site_url: https://example.github.io/mvu-zod-guide/
+site_description: MVU Zod 플러그인 사용법을 위한 한국어 가이드
+
+theme:
+  name: material
+  language: ko
+  palette:
+    # 라이트 모드
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-7
+        name: 다크 모드로 전환
+    # 다크 모드
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-4
+        name: 라이트 모드로 전환
+  
+  font:
+    text: Noto Sans KR
+    code: JetBrains Mono
+  
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.expand
+    - navigation.indexes
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+    - toc.follow
+
+extra_css:
+  - stylesheets/extra.css
+
+plugins:
+  - search:
+      lang: ko
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+
+nav:
+  - 홈: index.md
+  - 튜토리얼:
+    - 플러그인 설치: 튜토리얼/플러그인-설치.md
+    - 변수 설정: 튜토리얼/변수-설정.md
+    - 변수 프롬프트: 튜토리얼/변수-프롬프트.md
+    - 동적 프롬프트 전송: 튜토리얼/동적-프롬프트-전송.md
+    - 스크립트 변수 제어: 튜토리얼/스크립트-변수-제어.md
+    - 상태바: 튜토리얼/상태바.md
+    - 변수 구조 작성: 튜토리얼/변수-구조-작성.md
+    - 기존 MVU 마이그레이션: 튜토리얼/기존-MVU-마이그레이션.md
+    - 작성 템플릿 사용: 튜토리얼/작성-템플릿-사용.md
+    - MVU가 AI를 바보로 만드나: 튜토리얼/MVU가-AI를-바보로-만드나.md
+    - 질문하는 방법: 튜토리얼/질문하는-방법.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/
