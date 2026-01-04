@@ -5,7 +5,9 @@
 먼저 전체적인 흐름을 파악한 뒤, 문서를 읽으며 세부 사항을 이해해 봅시다.
 *(영상에서 언급되는 MVU beta를 모르셔도 괜찮습니다!)*
 
+<div style="text-align: center;">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/2QA4FUkzACU" frameborder="0" allowfullscreen></iframe>
+</div>
 
 > 💡 **참고:** 이전 버전인 MVU 및 MVU beta 영상은 [여기에서 볼 수 있지만,](https://www.youtube.com/@lolo-v5f3d) 굳이 보실 필요 없습니다. 바로 **MVU Zod**를 배우시면 됩니다.
 
