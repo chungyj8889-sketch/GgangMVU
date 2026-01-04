@@ -1,0 +1,161 @@
+/* Matcha 색상 테마 */
+:root {
+  /* 라이트 모드 색상 */
+  --md-primary-fg-color: #555B25;
+  --md-primary-fg-color--light: #91922D;
+  --md-primary-fg-color--dark: #3d4119;
+  --md-accent-fg-color: #91922D;
+  --md-accent-fg-color--transparent: rgba(145, 146, 45, 0.1);
+  
+  /* 배경 색상 */
+  --md-default-bg-color: #FAFAF5;
+  --md-default-bg-color--light: #DFDFC8;
+  --md-default-bg-color--lighter: #EEEEE0;
+  --md-default-bg-color--lightest: #F5F5EC;
+}
+
+/* 다크 모드 색상 */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #91922D;
+  --md-primary-fg-color--light: #AAB15C;
+  --md-primary-fg-color--dark: #555B25;
+  --md-accent-fg-color: #AAB15C;
+  --md-accent-fg-color--transparent: rgba(170, 177, 92, 0.1);
+  
+  --md-default-bg-color: #1e1e1e;
+  --md-default-bg-color--light: #2d2d2d;
+  --md-default-bg-color--lighter: #3d3d3d;
+  --md-default-bg-color--lightest: #4d4d4d;
+}
+
+/* Noto Sans KR 폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* 헤더 스타일 */
+.md-header {
+  background-color: var(--md-primary-fg-color);
+}
+
+.md-header__title {
+  font-weight: 700;
+}
+
+/* 네비게이션 스타일 */
+.md-nav__link:hover {
+  color: #AAB15C;
+}
+
+.md-nav__item--active > .md-nav__link {
+  color: var(--md-primary-fg-color);
+  font-weight: 700;
+}
+
+/* 사이드바 스타일 */
+.md-sidebar__scrollwrap {
+  scrollbar-width: thin;
+  scrollbar-color: var(--md-primary-fg-color--light) transparent;
+}
+
+/* 버튼 및 링크 호버 효과 */
+.md-button:hover,
+.md-nav__link:hover,
+a:hover {
+  color: #AAB15C;
+  transition: color 0.2s ease-in-out;
+}
+
+/* 코드 블록 스타일 */
+.highlight code,
+code {
+  border-radius: 4px;
+}
+
+/* 검색 박스 스타일 */
+.md-search__input {
+  border-radius: 8px;
+}
+
+.md-search__input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* 콘텐츠 영역 스타일 */
+.md-content {
+  max-width: 100%;
+}
+
+.md-content__inner {
+  margin-bottom: 2rem;
+}
+
+/* Admonition 스타일 */
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* 테이블 스타일 */
+.md-typeset table:not([class]) {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.md-typeset table:not([class]) th {
+  background-color: var(--md-primary-fg-color);
+  color: white;
+}
+
+/* 목차(TOC) 스타일 */
+.md-nav--secondary .md-nav__link--active {
+  color: var(--md-primary-fg-color);
+}
+
+/* 접히는 사이드바 화살표 */
+.md-nav__toggle ~ .md-nav {
+  transition: max-height 0.3s ease-in-out;
+}
+
+/* 스크롤바 스타일 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--md-default-bg-color--light);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--md-primary-fg-color--light);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--md-primary-fg-color);
+}
+
+/* 탭 스타일 */
+.md-typeset .tabbed-labels > label {
+  border-radius: 4px 4px 0 0;
+}
+
+.md-typeset .tabbed-labels > label:hover {
+  background-color: var(--md-accent-fg-color--transparent);
+}
+
+/* 푸터 스타일 */
+.md-footer {
+  background-color: var(--md-primary-fg-color);
+}
+
+/* 반응형 디자인 */
+@media screen and (max-width: 76.1875em) {
+  .md-nav--primary .md-nav__title {
+    background-color: var(--md-primary-fg-color);
+  }
+}
