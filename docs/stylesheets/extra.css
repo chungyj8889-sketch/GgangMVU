@@ -74,6 +74,12 @@ code {
   border-radius: 4px;
 }
 
+/* 인라인 코드 스타일 (말차 라떼 테마) */
+.md-typeset code:not(.highlight code) {
+  color: #6d4c41;
+  background-color: #fff8e1;
+}
+
 /* 검색 박스 스타일 */
 .md-search__input {
   border-radius: 8px;
